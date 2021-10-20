@@ -1,1 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dikshu{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/pexels-evie-shaffer-2395249.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    color: rgb(39, 30, 37);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+span{
+    color: #f9004d;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(234, 240, 245);
+    font-size: 25px;
+    font-family: Roboto, "Helvetica Neue",;
+    text-decoration: none; 
+    border: 1px solid transparent;
+    transition: transform 0.5s;
+}
+
+ul li a{
+    color: rgb(44, 40, 40);
+    text-decoration: none;
+    
+}
+
+ul li a:hover{
+    color: #f9004d;
+}
+.btn{
+    background-color: #fc2469ef;
+    color: rgb(39, 38, 38);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .6s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+.content{
+    position:absolute;
+    top: 60%;
+    left: 8%;
+}
+
+h2{    color: rgb(68, 109, 48);
+    margin: 20px 0 20px;
+    font-size: 40px;
+}
+h3{
+    color: rgb(88, 33, 88);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+h4{
+    color: rgb(161, 99, 63);
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+.alert{
+    padding: 150px ;
+    padding-left:780px;
+    
+}
+
+img{    
+    border-style: solid;
+    border-image: double;
+    border-radius: 5px;
+    border-spacing: 10px;
+    border-left-color: #f9004d;
+    border-right-color: #f9004d;
+    border: top left radius 5px;
+    
+
+}
 
