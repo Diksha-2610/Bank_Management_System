@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #overview{
+            height: 100vh;
+            width: 100%;
+            background-image: url(./img/pexels-scott-webb-1084510.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            padding-top: 8%;
+            padding-left: 40%;
+            font-size: 35px;
+        }
+
+                
+        p{
+            display: flex ;
+            font-family: cursive;
+            font-size: 25px;
+            position: center;
+            padding-top: 100px;
+            padding-left: 330px;
+            font-weight: bold;
+            color: rgb(240, 132, 132);
+
+        }
+
+        #sideNav{
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            right: -250px;
+            top:0;
+            background: #42cf6d;
+            z-index: 2;
+            transition: .2s;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 50px 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #menuBtn{
+         
+         width: 50px;
+          position: fixed;
+          right: 65px;
+          top: 35px;
+          z-index: 2;
+          cursor: pointer;
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+<body>                                          
+    <div id="overview">
+
+        <h2> About us </h2>
+
+        <p>Golden Horizon Bank makes installment loans at all <br>of our full-service bank locations, with friendly, <br>helpful loan officers.
+
+            Golden Horizon Bankis an Indian nationalised banking<br> and financial services company. 
+            
+            It is<br> under the ownership of Ministry of Finance,<br> Government of India. 
+            
+            It is the fourth largest<br> nationalised bank in India, with 132 million customers,<br> 
+            
+            a total business of US$218 billion, and a<br> global presence of 100 overseas offices.</p>
+
+
+    </div>
+
+    <div>
+
+        <nav id="sideNav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="customers.html">OUR CUSTOMERS</a></li>
+                <li><a href="regi.html">NEW USER</a></li>
+            </ul>
+        </nav>
+        <div id="hojaplz">
+        <img src="./img/symbol.jpg" id="menuBtn">
+
+        <script>
+            let menuBtn = document.querySelector('#hojaplz');
+            let errorClose = document.querySelector('.errorClose')
+             let hide= document.querySelector('.hide')
+             let balance= document.querySelector('balance')
+         
+             let condition = true;
+ 
+            menuBtn.addEventListener('click',function(){
+                if(condition){
+                    sideNav.style.right = '0px';
+                    condition = false;
+                }else{
+                 sideNav.style.right = '-250px';
+                 condition = true;
+                }
+ 
+            })
+ 
+            errorClose.addEventListener('click',function(){
+              hide.style.display='none'
+            })
+            
+         </script>
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+ 
+    </div>
+
+
+</body>

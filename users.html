@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table with database</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="users.php" rel="stylesheet">
+<style>
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color:black;
+
+    font-size: 25px;
+    text-align: left;
+}
+th {
+    background-color:#e43b5a;
+    height: 55px;
+}
+tr:nth-child(even) {background-color: #6b6767}
+
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top:0;
+    background: #89bce5;
+    z-index: 2;
+    transition: .5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+ 
+</style>
+</head>
+<body>
+<div style="font-family: 'Gabriela', serif;   font-size: 40px;
+    text-align: center;
+    margin: 20px;">Bank's  Customers</div>
+<table>
+<tr>
+<th>Sr.No.</th>
+<th>Name</th>
+<th>Email</th>
+<th>Gender</th>
+<th>Balance</th>
+</tr>
+<link href="users.php" rel="stylesheet">
+
+<tbody>
+    <tr class="table-light">
+        <td scope="row">1</td>
+        <td>  Suraj</td>
+        <td>suraj@gmail.com</td>
+        <td> Male</td>
+        <td>
+            <p id="surajBankBalance">25842</p>
+        </td>
+    </tr>
+    <tr class="table-info">
+        <td scope="row">2</td>
+        <td>Bhushan</td>
+        <td>bhushan@email.com</td>
+        <td> Male</td>
+
+        <td>
+            <p id="bhushanBankBalance">48253</p>
+        </td>
+    </tr>
+    <tr class="table-light">
+        <td scope="row">3</td>
+        <td>Aarush</td>
+        <td>aarush@email.com</td>
+        <td> Male</td>
+
+        <td>
+            <p id="aarushBankBalance">7500</p>
+        </td>
+    </tr>
+    <tr class="table-info">
+        <td scope="row">4</td>
+        <td>somesh</td>
+        <td>somesh@email.com</td>
+        <td> Male</td>
+
+        <td>
+            <p id="someshBankBalance">78911</p>
+        </td>
+    </tr>
+    <tr class="table-light">
+        <td scope="row">5</td>
+        <td>Prachi</td>
+        <td>prachi@email.com</td>
+        <td> Female</td>
+
+        <td>
+            <p id="prachiBankBalance">6300</p>
+        </td>
+    </tr>
+    <tr class="table-info">
+        <td scope="row">6</td>
+        <td>Chandan</td>
+        <td>chandan@email.com</td>
+        <td> Male</td>
+
+        <td>
+            <p id="chanadanBankBalance">500</p>
+        </td>
+    </tr>
+    <tr class="table-light">
+        <td>7</td>
+        <td>Sunita</td>
+        <td>sunita@email.com</td>
+        <td> Female</td>
+
+        <td>
+            <p id="sunitaBankBalance">9800</p>
+        </td>
+    </tr>
+    <tr class="table-info">
+        <td scope="row">8</td>
+        <td>Soniya</td>
+        <td>soniya@email.com</td>
+        <td> Female</td>
+
+        <td>
+            <p id="soniyaBankBalance">35603</p>
+        </td>
+    </tr>
+    <tr class="table-light">
+        <td scope="row">9</td>
+        <td>Sumedh</td>
+        <td>sumedh@email.com</td>
+        <td> Male</td>
+
+        <td>
+            <p id="sumedhBankBalance">85002</p>
+        </td>
+    </tr>
+    <tr class="table-info">
+        <td scope="row">10</td>
+        <td>Nikita</td>
+        <td>nikita@email.com</td>
+        <td> Female</td>
+
+        <td>
+            <p id="nikitaBankBalance">48602</p>
+        </td>
+    </tr>
+
+</tbody>
+
+ </section>
+        <nav id="sideNav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="users.html">OUR CUSTOMERS</a></li>
+                <li><a href="history.html">TRANSACTION HISTORY</a></li>
+                <li><a href="regi.html">NEW USER</a></li>
+            </ul>
+        </nav>
+        <div id="hojaplz">
+        <img src="./img/pexels-scott-webb-1084510.jpg" id="menuBtn">
+</div>
+
+        <script>
+           let menuBtn = document.querySelector('#hojaplz');
+            let sideNav = document.querySelector('#sideNav')
+           
+            let condition = true;
+
+           menuBtn.addEventListener('click',function(){
+               if(condition){
+                   sideNav.style.right = '0px';
+                   condition = false;
+               }else{
+                sideNav.style.right = '-250px';
+                condition = true;
+               }
+           })
+        </script>
+</table>
+</body>
+</html>

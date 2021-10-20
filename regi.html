@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" conte="width=device-width, initial-scale=1.0">
+    <title>Golden Horizon Bank</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+
+    <div class="container">
+         <div class="title">Registration form</div>
+         <form action="#">
+             <div class="user-details">
+                 <div class="input-box">
+                     <span class="details">Full Name</span>
+                     <input type="text" placeholder="Enter your name" required>
+                 </div>
+                 <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter your username" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone number</span>
+                    <input type="text" placeholder="Enter your number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm password</span>
+                    <input type="password" name="password" required>
+                </div>
+             </div>
+             <div class="gender-details">
+                 <input type="radio" name="gender" id="dot-1"> 
+                 <input type="radio" name="gender" id="dot-2">
+                 <input type="radio" name="gender" id="dot-3"> 
+                 <span class="gender-tittle">Gender</span>
+                 <div class="category">
+                     <label for="dot-1">
+                         <span class="dot one"></span>
+                         <span class="gender">Male</span>
+                     </label>
+                     <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                 </div>
+             </div>
+             <div class="button">
+                 <input type="submit" value="Register">
+             </div>
+         </form>
+
+         <nav id="sideNav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="customers.html">OUR CUSTOMERS</a></li>
+                <li><a href="details.html">TRANSACTION HISTORY</a></li>
+                <li><a href="regi.html">NEW USER</a></li>
+            </ul>
+        </nav>
+        <div id="hojaplz">
+        <img src="./img/symbol.jpg" id="menuBtn">
+</div>
+
+        <script>
+           let menuBtn = document.querySelector('#hojaplz');
+           let errorClose = document.querySelector('.errorClose')
+            let hide= document.querySelector('.hide')
+            let balance= document.querySelector('balance')
+        
+            let condition = true;
+
+           menuBtn.addEventListener('click',function(){
+               if(condition){
+                   sideNav.style.right = '0px';
+                   condition = false;
+               }else{
+                sideNav.style.right = '-250px';
+                condition = true;
+               }
+
+           })
+
+           errorClose.addEventListener('click',function(){
+             hide.style.display='none'
+           })
+           
+        </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+
+    </div>
+    
+</body>
+</html>
